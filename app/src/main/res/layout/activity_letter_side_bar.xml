@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lettersidebar.LetterSideBarActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:text="返回" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.example.customizedview.lettersidebar.LetterSideBar
+        android:id="@+id/letterSideBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_1"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:normalColor="@color/colorPrimary"
+        app:normalLetterSize="14sp"
+        app:selectColor="@color/colorAccent"
+        app:selectLetterSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".progressbar.ProgressBarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:text="返回" />
+
+    </LinearLayout>
+
+    <com.example.customizedview.progressbar.ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        app:innerBackground="@color/colorPrimary"
+        app:outBackground="@color/colorAccent"
+        app:progressTextColor="@color/colorAccent"
+        app:progressTextSize="10sp"
+        app:roundWidth="5dp" />
+
+</RelativeLayout>
